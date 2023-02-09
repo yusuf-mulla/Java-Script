@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+
+      var num=[1,2,3,4,5,[6,7,8,9,10,[1,2,3,4]],[11,12,13,14,15],[16,17,18,19],[20,21,22,23],24,25]
+      function flatArray(arr){
+        const arr2=[]
+        arr.array.forEach((item) => {
+          if (typeof(item)=="object")
+          flatArray(item)
+        });
+      }
+      ///////////////////////////////////////////////////////////////
+      //   var num=[1,2,3,4,5,[6,7,8,9,10,[1,2,3,4]],[11,12,13,14,15],[16,17,18,19],[20,21,22,23],24,25]
+      //  var compact=[].concat.apply([],num);
+      //   console.log(compact);
+      //
+      //////////////////////////////////////////////////////////////////////////
+      //
+      // var num = ["apple","apple","orange","apple","straberry","apple",]
+      // .reduce(function (acc, e, i) {
+      //   if (e == "apple") acc.push(i);
+      //   return acc;
+      // }, []);
+      // var mid = num[Math.floor(num.length / 2)];
+      // console.log(mid);
+      
+      ////////////////////////////////////////////////////////////////////////
+      //
+      // let name = "hallo world welcome to my universe  ";
+      // // name1 = name.replace(/ +/g, "");
+      // const num = name.split("");
+      
+      // const count = [];
+      // const copyarr = num.forEach(
+      //   (item) => {
+      //     if (item !=' '){
+      //       (count[item] = (count[item] || 0) + 1)
+      //     }
+      //   }
+        
+      // );
+      // console.log(count);
+      //////////////////////////////////////////////////////////////////////////
+    </script>
+  </head>
+  <body></body>
+</html>

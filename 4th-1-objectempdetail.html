@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const person = {
+        empName: "harsh singhaniya",
+        empAdress: "mumbai",
+        gender: "male",
+        empMo: 9766714070,
+        empId: 125643,
+      };
+      console.log(person.empName, person.empId);
+      document.write(person.gender, person.empMo, person.empAdress);
+      person.empType = "boy"; // add object in last
+      console.log(person);
+      person["empCity"] = "nanded"; // add object last
+      console.log(person);
+      ////////////// Object.key and Object.values  (given O/p in the fom of array)
+      //   const car = {
+      //     carName: "toyota",
+      //     model: "XD4000",
+      //     color: "Blacl glossy",
+      //     type: "sedan",
+      //     seats: "5",
+      //     tyre: "4",
+      //   };
+      //   const detail = Object.keys(car);   // only obj key
+      //   console.log(detail); ///  ['carName', 'model', 'color', 'type', 'seats', 'tyre']
+      //   const values = Object.values(car);  // only obj value
+      //   console.log(values); //['toyota', 'XD4000', 'Blacl glossy', 'sedan', '5', '4']
+      //   const entrs=Object.entries(car)
+      //   console.log(entrs); // obj key and obj value both
+      //
+      ///////////   for in loop (object):-  O/p only key   /////////////////////////////
+      // const obj={name:"xyz",city:"nanded",age:28,adress:"navapur"}
+      // for (let test in obj){
+      // console.log(test);  // O/p only all keys
+      // }
+      ///////////    for in loop (object):-  O/p only value   ////////////////////////
+      // const obj={name:"xyz",city:"nanded",age:28,adress:"navapur"}
+      // for (let test in obj){
+      // console.log(obj[test]);//   O/p only values
+      // }
+      //
+      ////////// for in loop (object):- O/p only city value (nanded)  ///////////////////
+      // const obj={name:"xyz",city:"nanded",age:28,adress:"navapur"}
+      // let test="city"
+      // console.log(obj[test]);
+      //
+      /////////   in arra object used map and spreed ////////////////////
+      // var nam = [
+      //   { fname: "zimad", lname: "khan" },
+      //   { fname: "yusuf", lname: "mulla" },
+      // ];
+      // var newarr = nam.map((item) => {
+      //   return { ...item, fullname: `${item.fname}${item.lname}` };
+      // });
+      // console.log(newarr); // O/p fname:'yusuf',lname:'mulla',fullname:'yusufmulla'
+    </script>
+  </head>
+  <body></body>
+</html>

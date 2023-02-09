@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //// string is collection of text    //////
+      //
+      ///////////  String:- string text type (total 3 type) /////////////////////
+      //
+      // var str = '"welcome to career next'; // type in single quotes
+      // var str = "welcome to career next"; // type in double quotes
+      // var str = `welcome to career next`; // type in backticks
+      //
+      ///////////  Length :- how to check length in string //////////////
+      //
+      // var str = "javascript";
+      // console.log(str.length);
+      // var str = "welcome back";
+      // console.log(str.length);
+      // var str = "   hallo";
+      // console.log(str.length);
+      //
+      ///////////// lowercase:- (small abcd)  convert all text in small   ////////
+      //
+      // var str1 = "Welcome to CAREER NEXT learing academy";
+      // console.log(str1.toLowerCase());
+      //
+      ///////////// uppercase:- (capital abcd) convert all text in capital  /////
+      //
+      // var str1 = "Welcome to CAREER NEXT learing academy";
+      // console.log(str1.toUpperCase());
+      //
+      ///////////////////////   stratwith and endwith given boolean velue /////
+      //
+      // var str1 = "Welcome to CAREER NEXT learing academy";
+      // console.log(str1.startsWith("Welcome")); // true (if "w" small letter then false)
+      // console.log(str1.startsWith("welcome")); // false
+      // console.log(str1.endsWith("academy")); // true (if "A" capital letter then false)
+      // console.log(str1.endsWith("Academy")); // false
+      // console.log(str1.endsWith("Aca")); // false
+      // console.log(str1.endsWith("emy")); // true
+      //
+      ///////////     indexof:-  given index value frm start(count from zero) //////
+      //
+      //////// M-0 y-1 (spc)-2 n-3 a-4 m-5 e-6 (spc)-7 i-8 s-9 (spc)-10 p-11
+      // var str1 = "My name is pathaan";
+      // console.log(str1.indexOf("name")); // O/p =3
+      // console.log(str1.indexOf("pathaan")); // O/p =11
+      //
+      ///////////  lastindexof:-  given index value frm end (count from zero)c  /////
+      //
+      // var str1 = "My name is pathaan";
+      // console.log(str1.lastIndexOf("name"));
+      // console.log(str1.lastIndexOf("pathaan"));
+      //
+      /////////   concat:- multi string concat in single string with space ////////
+      //
+      // const str1 = "hello";
+      // const str2 = "Welcome to";
+      // const str3 = "Career next";
+      // const str4 = "Learning academy";
+      // console.log(str1.concat(" ", str2, " ", str3, " ", str4));
+      //
+      /////////////   concet method without using concet methos ///////
+      //
+      // var fname='yusuf'
+      // var mname='khalil'
+      // var lname='mulla'
+      // var city='navapur'
+      // console.log(`${fname} ${mname} ${lname} ${city}`);
+      // O/p concat name without concet method
+      //
+      ////////////////////////  trim:- unvanted space trim (delet) //////////////
+      //
+      // var str1 = "              Career Next           ";
+      // console.log(str1.trim()); // O/p without space
+      // console.log(str1); // O/p with space
+      //
+      //// split:- all word divide with '', string method O/p in the fome of array  ///
+      //
+      // var str = "welcome to career next learning academy";
+      // console.log(str.split("")); // all single charector devide
+      // console.log(str.split(" ")); // all single word devide
+      // console.log(str.split("  ")); // same string in O/p
+      //
+      /////// replace:-  1st string (word) replace with new ////////////////////////
+      //
+      // var str = "my name is pathan is khan";
+      // console.log(str.replace("is", "are")); // O/p replace 1st "is" with "are"
+      // console.log(str.replace(/is/g, "are")); // O/p replace both "is" with "are"
+      //
+      /////////////// charAt:-  find text by using index number   ///////////////////
+      //
+      // var text = "Welcome to CAREER NEXT learning academy";
+      // console.log(text.charAt(8)); // O/p (t)
+      //
+      ////////////  search:- fined index number by word 1st character  /////////////
+      //
+      // var text = "Welcome to CAREER NEXT learning academy";
+      // console.log(text.search("NEXT")); // O/p (18)
+      //
+      ////  match:- find single charcter from string and O/p given in array /////////
+      //
+      // var text = "Welcome to CAREER NEXT learning academy";
+      // console.log(text.match("C")); // O/p (11)
+      // console.log(text.match(/e/g)); // O/p (e,e,e,e)
+      //
+      ////////////////  substring:-  start index no to end index no    ///////////////
+      //
+      // var text = "Welcome to CAREER NEXT learning academy";
+      // console.log(text.substring(0, 6)); // O/p  substring (Welcom) (start from zero, end with -1)
+      // console.log(text.slice(0, 6)); // O/p  slice (Welcom) (start from zero, end with -1)
+      // console.log(text.substring(6)); // O/p  substring ("e to CAREER NEXT learning academy")
+      // console.log(text.slice(6)); // O/p  slice ("e to CAREER NEXT learning academy")
+      // console.log(text.substring(-1)); // O/p  substring (Welcome to CAREER NEXT learning academy)
+      // console.log(text.slice(-1)); // O/p  slice     (y)
+      // console.log(text.substring(-1, 5)); // O/p  substring (Welco)
+      // console.log(text.slice(-1, 5)); // O/p  slice     (empty)
+      //
+      /////// substr:- start index from index no, whene end its count from word start  /////
+      //
+      // var text = "Welcome to CAREER NEXT learning academy";
+      // console.log(text.substr(0, 9)); // O/p (Welcome t)
+      // console.log(text.substr(11, 8)); // O/p (CAREER N)
+      //
+      ////////////  string:- number convert in string data type /////////////////
+      //
+      // var no = 100000;
+      // console.log(no.toString()); // O/p in string (black color)
+      //
+      // var no2 = String(no);
+      // console.log(typeof no2); // data type convert in string
+      //
+      //////// string convert in to number and given single (15) value  /////////////
+      //
+      // const num = "12345";
+      // const no = num.split("");
+      // const result = no.reduce((acc, cur) => Number(acc) + Number(cur));
+      // console.log(result);
+      //
+      /////////////////////////////////////////////////////////////////////////////////////
+    </script>
+  </head>
+  <body></body>
+</html>

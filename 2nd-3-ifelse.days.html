@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+       function showGrade(time) {
+        if (time < 12) {
+          console.log("good morning");
+        } else if (time < 16) {
+          console.log("good after noon");
+        } else if (time < 20) {
+          console.log("good evening");
+        } else if (time < 24) {
+          console.log("good night");
+        }
+      }
+      showGrade(12);
+      /////////////////////////////////////////////////////////
+      function showDay(day) {
+        if (day == "monday") {
+          console.log("today is monday");
+        } else if (day == "tuesday") {
+          console.log("today is  tuesday");
+        } else if (day == "wednesday") {
+          console.log("today is  wednesday");
+        } else if (day == "thusday") {
+          console.log("today is  thusday");
+        } else if (day == "friday") {
+          console.log("today is  friday");
+        } else if (day == "saturday") {
+          console.log("today is  saturday");
+        } else if (day == "sunday") {
+          console.log("today is  sunday");
+        } else {
+          console.log("today is not monday");
+        }
+      }
+      showDay("monday");
+      ///////////////////////  switch cash      //////////////////////////////////////
+      let day = "friday";
+      switch (day) {
+        case "monday":
+          console.log("today is monday");
+          break;
+        case "tuesday":
+          console.log("today is tuesday");
+          break;
+        case "wednusday":
+          console.log("today is wednusday");
+          break;
+        case "thusday":
+          console.log("today is thusday");
+          break;
+        case "friday":
+          console.log("today is friday");
+          break;
+        case "saturday":
+          console.log("today is saturday");
+          break;
+
+        default:
+          console.log("today is sunday");
+          break;
+      }
+      ////////////////////////////////////////////////////////////////////////////////
+      function persone(value) {
+    if (value <= 0) {
+      return document.write(prompt("please input valid value"));
+    } else if (value <= 17) {
+      return document.write(prompt("minor"));
+    } else if ((value = 20)) {
+      document.write(alert("valid age")("done:"));
+    } else {
+      document.write(100 + Number(value));
+    }
+  }
+  persone(prompt("please enter you age"));
+  document.write("done");
+  ////////////////////////////////////////////////////////////////////////////////
+     showDay(prompt("Please input valid age"))
+       
+        function showDay (a,b) {
+        if (isNaN(a) ==isNaN(b) ==false) {
+             
+        }else{
+            document.write(alert("enter valid input"))
+        }  {
+            return document.write(10 * Number (a,b))
+            
+        }}
+    
+    </script>
+  </head>
+  <body></body>
+</html>
