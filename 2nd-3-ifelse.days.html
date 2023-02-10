@@ -91,6 +91,27 @@
             return document.write(10 * Number (a,b))
             
         }}
+        ////////////////////////////////////////////////////////////////////////
+        function showclass(Class) {
+        if (Class == 0) {
+          console.log("you are in Kg");
+        } else if (Class < 0) {
+          console.log("please enter valid value");
+        } else if (Class <= 7) {
+          console.log("you are in primery school");
+        } else if (Class <= 10) {
+          console.log("you are in highschool");
+        } else if (Class <= 12) {
+          console.log("you are in junior collage");
+        } else if (Class <= 15) {
+          console.log("you are in senior collage");
+        } else if (Class < 16) {
+          console.log("your are in PHD");
+        } else {
+          console.log("invalid input");
+        }
+      }
+      showclass("5");
     
     </script>
   </head>
